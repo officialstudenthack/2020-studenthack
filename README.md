@@ -1,1 +1,1 @@
-# StudentHack VII official website
+# StudentHack VIII official website

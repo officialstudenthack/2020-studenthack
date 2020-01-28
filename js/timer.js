@@ -1,5 +1,5 @@
 // Configuration
-var countDownDate = new Date("Mar 30, 2019 9:00:00").getTime();
+var countDownDate = new Date("Apr 25, 2020 9:00:00").getTime();
 
 var bounceSettings = {
   times: 1,
