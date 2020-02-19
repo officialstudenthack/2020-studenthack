@@ -14,7 +14,7 @@
     </linearGradient>
 
     <clipPath id="clipPath">
-      <polygon points="250,60 100,400 400,400"/>
+      <polygon points="250,0 100,400 400,400"/>
     </clipPath>
   </defs>
 
@@ -26,5 +26,5 @@
     <feBlend in="SourceGraphic" in2="noisy" mode="multiply" />
   </filter>
 
-  <polygon points="250,60 100,400 400,400" filter="url(#displacementFilter)" style="clip-path: url(#clipPath);" class="triangle" />
+  <polygon points="250,0 100,400 400,400" filter="url(#displacementFilter)" style="clip-path: url(#clipPath);" class="triangle" />
 </svg>
