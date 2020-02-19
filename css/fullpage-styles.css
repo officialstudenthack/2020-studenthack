@@ -177,3 +177,42 @@ p {
 .section {
   text-align: center;
 }
+
+.verticalText{
+  transform: rotate(180deg);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  color: white;
+  font-family: arial, helvetica;
+  font-weight: 550;
+  letter-spacing: 2px;
+}
+
+#FAQ{
+  position: absolute;
+}
+
+#FAQ-card-deck{
+  padding-left: 120px;
+  padding-right: 100px;
+}
+
+#FAQ-text{
+  font-size: small;
+  color: white;
+}
+
+.card-deck{
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+#FAQ-card{
+  background: linear-gradient(50deg, rgba(199, 100, 206, 1) 35%, 60%, rgb(125, 141, 216, 1) 80%);
+  border-style: none;
+  box-shadow: 0 4px 8px 0 rgb(166, 15, 177), 0 6px 20px 0 rgba(0, 0, 0, 0);
+}
+
+#FAQ-card-title{
+  color: white;
+}
