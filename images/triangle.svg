@@ -1,0 +1,30 @@
+<svg
+  xmlns='http://www.w3.org/2000/svg'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+  height="500" width="500">
+  <style type="text/css">
+    polygon{
+      fill:url(#linearGradTriangle)
+    }
+  </style>
+  <defs>
+    <linearGradient id="linearGradTriangle" x1="100%" y1="100%" x2="0%" y2="100%" gradientTransform="rotate(40)">
+      <stop offset="0%" stop-color="rgb(255, 81, 114)" />
+      <stop offset="50%" stop-color="rgb(79, 221, 174)" />
+    </linearGradient>
+
+    <clipPath id="clipPath">
+      <polygon points="250,60 100,400 400,400"/>
+    </clipPath>
+  </defs>
+
+  <filter id="displacementFilter">
+    <feTurbulence
+      type='fractalNoise'
+      baseFrequency='1.0' result="noisy"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feBlend in="SourceGraphic" in2="noisy" mode="multiply" />
+  </filter>
+
+  <polygon points="250,60 100,400 400,400" filter="url(#displacementFilter)" style="clip-path: url(#clipPath);" class="triangle" />
+</svg>
