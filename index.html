@@ -5,22 +5,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css">
+
   <title>StudentHack VIII</title>
-  <script src="js/jquery.js"></script>
-  <script src="js/paper-full.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css"
+    integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/fullpage-styles.css">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"
+    integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
+  <script src="js/timer.js"></script>
 </head>
 
 <body>
+  <h1 style="visibility: hidden; margin: 0px; font-size: 0px;"> StudentHackVII </h1>
   <div class="nav-bar"></div>
-  <div class="preloader-wrapper">
-    <div class="preloader">
-      <img id="preloader-image" src="images/logo.png">
+  <div id="fullpage">
+    <div class="section" id="section0">
+      <div class="triangle-container">
+        <img src="images/triangle.svg" class="section-triangle"></img>
+      </div>
+      <div class="intro">
+        <div class="card header-card w-60 mx-auto">
+          <div class="card-title">
+            <div class="studenthack-title">
+              StudentHack 2020
+            </div>
+          </div>
+          <div class="card-body studenthack-title-body">
+            <div class="card-text">
+              <div id="timer" class="timer">
+                <span id="timer-days" class="timer-element">99</span>:<span id="timer-hours"
+                  class="timer-element">20</span>:<span id="timer-minutes" class="timer-element">14</span>:<span
+                  id="timer-seconds" class="timer-element">30</span>
+              </div>
+            </div>
+            <div class="card-text location-text">
+              Manchester
+            </div>
+            <div id="timer-progressbar" class="progress">
+              <div class="progress-bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="section1">
+      <div class="section-triangle"></div>
+      <div class="intro">
+        <h2>test0</h2>
+        <p>
+          test1
+        </p>
+      </div>
+    </div>
+    <div class="section" id="section2">
+      <div class="intro">
+        <h5>test2</h5>
+      </div>
     </div>
   </div>
-
-  <div class="content">
+  <!-- <div class="content">
     <img src="images/logo.png" id="logo">
     <canvas resize id="canvas"></canvas>
     <div id="title-bubble">
@@ -184,7 +233,7 @@
         </div>
       </div>
     </section>
-    <!--<section id="sponsors" class="container">
+    <section id="sponsors" class="container">
       <img id="sponsors-header" src="images/sponsors.png">
       <div class="sponsor-row row justify-content-center">
         <div class="col-md-4">
@@ -212,13 +261,17 @@
           </a>
         </div>
       </div>
-    </section>-->
-  </div>
+    </section>
+  </div> -->
+  <script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+      licenseKey: 'wG3vvDAL-giM3okkt-uEQFHy3r-aIwc3Aqz',
+      anchors: ['title', 'secondPage', '3rdPage'],
+      navigation: true,
+      navigationPosition: 'right',
+      scrollBar: true
+    });
+  </script>
 </body>
-
-<footer>
-  <script type="text/paperscript" canvas="canvas" src="js/layout.js"></script>
-  <script src="js/timer.js"></script>
-</footer>
 
 </html>
