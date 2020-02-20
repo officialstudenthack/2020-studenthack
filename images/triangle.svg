@@ -1,30 +1,32 @@
-<svg
-  xmlns='http://www.w3.org/2000/svg'
-  xmlns:xlink='http://www.w3.org/1999/xlink'
-  height="500" width="500">
-  <style type="text/css">
-    polygon{
-      fill:url(#linearGradTriangle)
-    }
-  </style>
+<svg xmlns="http://www.w3.org/2000/svg" 
+  xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1167.98 1011.5" preserveAspectRatio="none">
   <defs>
-    <linearGradient id="linearGradTriangle" x1="100%" y1="100%" x2="0%" y2="100%" gradientTransform="rotate(40)">
-      <stop offset="0%" stop-color="rgb(255, 81, 114)" />
-      <stop offset="50%" stop-color="rgb(79, 221, 174)" />
+    <style>.cls-1{mask:url(#mask);}.cls-2{fill:url(#linear-gradient);}.cls-3{filter:url(#luminosity-noclip);}</style>
+    <filter id="luminosity-noclip" x="-90.34" y="0" width="1348.66" height="1011.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask" x="-90.34" y="0" width="1348.66" height="1011.5" maskUnits="userSpaceOnUse">
+      <g class="cls-3">
+        <path d="M988.59,885.62c0,4.35-4,7.87-9,7.87H188.38c-5,0-9-3.52-9-7.87V744c0-4.34,4-7.86,9-7.86H979.6c5,0,9,3.52,9,7.86Z"/>
+        <path d="M1258.32,687.82c0,8.07-6,14.61-13.49,14.61H-76.86c-7.45,0-13.48-6.54-13.48-14.61V132.62c0-8.07,6-14.61,13.48-14.61H1244.83c7.45,0,13.49,6.54,13.49,14.61Z"/>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient" x1="269.78" y1="253.01" x2="866.78" y2="226.94" gradientTransform="translate(-65.73 675.19) rotate(-60)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff4f6a"/>
+      <stop offset="0.13" stop-color="#f64d6f"/>
+      <stop offset="0.34" stop-color="#de477d"/>
+      <stop offset="0.61" stop-color="#b63e94"/>
+      <stop offset="0.92" stop-color="#8032b3"/>
+      <stop offset="1" stop-color="#702ebc"/>
     </linearGradient>
 
-    <clipPath id="clipPath">
-      <polygon points="250,0 100,400 400,400"/>
-    </clipPath>
   </defs>
-
-  <filter id="displacementFilter">
-    <feTurbulence
-      type='fractalNoise'
-      baseFrequency='1.0' result="noisy"/>
-    <feColorMatrix type="saturate" values="0"/>
-    <feBlend in="SourceGraphic" in2="noisy" mode="multiply" />
-  </filter>
-
-  <polygon points="250,0 100,400 400,400" filter="url(#displacementFilter)" style="clip-path: url(#clipPath);" class="triangle" />
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g class="cls-1">
+        <polygon class="cls-2" points="583.99 1011.5 0 0 1167.98 0 583.99 1011.5"/>
+      </g>
+    </g>
+  </g>
 </svg>
