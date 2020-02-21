@@ -1,5 +1,17 @@
+:root {
+  --loc-text-shadow: 2px -2px 0 rgb(102, 255, 255),
+    4px -4px 0 rgb(255, 0, 204),
+    6px -6px 0 black;
+
+  --sec-bg: linear-gradient(135deg, rgba(255, 216, 22, 0.8) 20%, 45%, rgba(63, 0, 188, 0.8) 80%),
+    url("../images/noise.svg");
+
+  --header-bg: linear-gradient(45deg, rgba(175, 0, 198, 0.75) 20%, 55%, rgba(255, 219, 0, 0.6) 95%),
+    url("../images/noise.svg");
+}
+
 .section {
-  background: linear-gradient(135deg, rgba(255, 216, 22, 0.8) 20%, 45%, rgba(63, 0, 188, 0.8) 80%), url("../images/noise.svg");
+  background: var(--sec-bg);
 }
 
 .section-triangle {
@@ -21,8 +33,7 @@
 }
 
 .header-card {
-  background: linear-gradient(45deg, rgba(175, 0, 198, 0.75) 20%, 55%, rgba(255, 219, 0, 0.6) 95%),
-    url("../images/noise.svg");
+  background: var(--header-bg);
   border: none;
   border-radius: 10px;
   margin-bottom: 3em;
@@ -87,9 +98,7 @@
 .location-text {
   color: white;
   font-size: 5vw;
-  text-shadow: 2px -2px 0 rgb(102, 255, 255),
-    4px -4px 0 rgb(255, 0, 204),
-    6px -6px 0 black;
+  text-shadow: var(--loc-text-shadow);
   border: none;
   margin-top: -0.5em;
 }
@@ -246,8 +255,7 @@ p {
 }
 
 .FAQ-card {
-  background: linear-gradient(45deg, rgba(175, 0, 198, 0.75) 20%, 55%, rgba(255, 219, 0, 0.6) 95%),
-    url("../images/noise.svg");
+  background: var(--header-bg);
   border-style: none;
   border-radius: 5px !important;
 
@@ -301,6 +309,10 @@ p {
     transform: translate(32vw, 0);
     padding-bottom: 1.5em;
   }
+
+  .location-text {
+    text-shadow: var(--loc-text-shadow);
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -316,6 +328,10 @@ p {
     font-size: 4.5vw;
     transform: translate(32vw, 0);
     padding-bottom: 1.3em;
+  }
+
+  .location-text {
+    text-shadow: var(--loc-text-shadow);
   }
 }
 
@@ -333,6 +349,10 @@ p {
     transform: translate(32vw, 0);
     padding-bottom: 1.3em;
   }
+
+  .location-text {
+    text-shadow: var(--loc-text-shadow);
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -348,6 +368,10 @@ p {
     font-size: 4.5vw;
     transform: translate(32vw, 0);
     padding-bottom: 1.3em;
+  }
+
+  .location-text {
+    text-shadow: var(--loc-text-shadow);
   }
 }
 
@@ -365,6 +389,10 @@ p {
     transform: translate(32vw, 0);
     padding-bottom: 1.3em;
   }
+
+  .location-text {
+    text-shadow: var(--loc-text-shadow);
+  }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -380,6 +408,10 @@ p {
     transform: translate(32vw, 0);
     padding-bottom: 1.3em;
   }
+
+  .location-text {
+    text-shadow: var(--loc-text-shadow);
+  }
 }
 
 /* Extra small devices (phones, 400px and down) */
@@ -393,5 +425,11 @@ p {
     font-size: 4vw;
     transform: translate(32vw, 0);
     padding-bottom: 1.5em;
+  }
+
+  .location-text {
+    text-shadow: 1px -1px 0 rgb(102, 255, 255),
+      2px -2px 0 rgb(255, 0, 204),
+      3px -3px 0 black;
   }
 }
