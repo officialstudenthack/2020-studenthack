@@ -1,6 +1,11 @@
 .section {
-  background: linear-gradient(135deg, rgba(255, 216, 22, 0.80) 20%, 45%, rgba(94, 13, 255, 0.8) 75%),
-    url("../images/noise.svg");
+  background: linear-gradient(135deg, rgba(255, 216, 22, 0.8) 20%, 45%, rgba(63, 0, 188, 0.8) 80%), url("../images/noise.svg");
+}
+
+.section-triangle {
+  width: 40em;
+  height: 40em;
+  transform: translate(0px, 2em);
 }
 
 .triangle-container {
@@ -16,11 +21,11 @@
 }
 
 .header-card {
-  background: linear-gradient(45deg, rgba(137, 0, 155, 0.6) 20%, 55%, rgba(255, 219, 0, 0.6) 95%),
+  background: linear-gradient(45deg, rgba(175, 0, 198, 0.75) 20%, 55%, rgba(255, 219, 0, 0.6) 95%),
     url("../images/noise.svg");
   border: none;
   border-radius: 10px;
-  transform: translate(0%, -20%);
+  margin-bottom: 3em;
 }
 
 .studenthack-title {
@@ -59,8 +64,7 @@
 }
 
 .timer {
-  margin-top: 8%;
-  margin-bottom: -4vh;
+  margin-top: 0.7em;
   color: transparent;
   font-size: 7vw;
   text-shadow: 0px 0px 0px white,
@@ -87,6 +91,7 @@
     4px -4px 0 rgb(255, 0, 204),
     6px -6px 0 black;
   border: none;
+  margin-top: -0.5em;
 }
 
 .press-start-btn {
@@ -106,13 +111,14 @@
   text-align: center;
   text-transform: uppercase;
 
-  position: absolute;
+  /* position: absolute; */
 
+  padding-bottom: 1.3em;
   width: 35%;
-  height: 12%;
+  height: 1em;
   top: 0;
   left: 0;
-  transform: translate(33vw, 69.5vh);
+  transform: translate(32vw, -0.3em);
   mix-blend-mode: screen;
 }
 
@@ -126,19 +132,6 @@
   right: 3px;
   bottom: 3px;
   border: 3px solid black;
-}
-
-div.press-start-link>a {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  text-decoration: none;
-  z-index: 10;
-  background-color: #FFF;
-  opacity: 0;
-  filter: alpha(opacity=1);
 }
 
 div.press-start-link>a {
@@ -285,13 +278,118 @@ p {
   color: white;
 }
 
-
-
-
-/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 600px and up) */
 @media only screen and (max-width: 600px) {
+  .section-triangle {
+    width: 45vw;
+    height: 45vh;
+    transform: translate(0px, 28vh);
+  }
+
+  .press-start-btn {
+    height: 2em;
+    font-size: 4vw;
+    transform: translate(32vw, 0);
+    padding-bottom: 1.5em;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .section-triangle {
+    width: 45vw;
+    height: 60vh;
+    transform: translate(0px, 20vw);
+  }
+
+  .press-start-btn {
+    height: 1em;
+    font-size: 4.5vw;
+    transform: translate(32vw, 0);
+    padding-bottom: 1.3em;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .section-triangle {
+    width: 25em;
+    height: 70vh;
+    transform: translate(0px, 11vw);
+  }
+
+  .press-start-btn {
+    height: 1em;
+    font-size: 4.5vw;
+    transform: translate(32vw, 0);
+    padding-bottom: 1.3em;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .section-triangle {
+    width: 40em;
+    height: 90vh;
+    transform: translate(0px, 3vw);
+  }
+
+  .press-start-btn {
+    height: 1em;
+    font-size: 4.5vw;
+    transform: translate(32vw, 0);
+    padding-bottom: 1.3em;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .section-triangle {
+    width: 40em;
+    height: 90vh;
+    transform: translate(0px, 3vw);
+  }
+
+  .press-start-btn {
+    height: 1em;
+    font-size: 4.5vw;
+    transform: translate(32vw, 0);
+    padding-bottom: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .section-triangle {
+    width: 40em;
+    height: 90vh;
+    transform: translate(0px, 3vw);
+  }
+
+  .press-start-btn {
+    height: 1em;
+    font-size: 4.5vw;
+    transform: translate(32vw, 0);
+    padding-bottom: 1.3em;
+  }
+}
+
+/* Extra small devices (phones, 400px and down) */
+@media only screen and (max-width: 450px) {
+  .section-triangle {
+    display: none;
+  }
+
+  .press-start-btn {
+    height: 2em;
+    font-size: 4vw;
+    transform: translate(32vw, 0);
+    padding-bottom: 1.5em;
+  }
+}
+
+/* @media only screen and (max-width: 450px) {
   .timer {
-    margin-top: 5%;
+    transform: translateY(-1.5vh);
   }
 
   .location-text {
@@ -299,70 +397,27 @@ p {
   }
 
   .section-triangle {
-    width: 50%;
-    height: 38%;
-    transform: translate(0px, 80%);
+    width: 50vw;
+    height: 25vh;
+    transform: translate(0%, 30vh);
   }
 
   .press-start-btn {
-    font-size: 4vw;
-    height: 5%;
-    transform: translate(33vw, 58.5vh);
-  }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  .section-triangle {
-    width: 55%;
-    height: 55%;
-    transform: translate(0px, 40%);
+    margin-top: 10px;
+    padding-top: 1px;
+    font-size: 0.8rem;
+    height: 3vh;
+    transform: translate(33vw, 47.5vh);
   }
 
-  .press-start-btn {
-    height: 7%;
-    transform: translate(33vw, 63vh);
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .section-triangle {
-    width: 55%;
-    height: 60%;
-    transform: translate(0px, 35%);
+  .progress {
+    height: 0.5rem;
   }
 
-  .press-start-btn {
-    height: 8%;
-    transform: translate(33vw, 65vh);
-  }
-}
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .section-triangle {
-    width: 60%;
-    height: 70%;
-    transform: translate(0px, 20%);
+  .location-text {
+    text-shadow: 1px -1px 0 rgb(102, 255, 255),
+      2px -2px 0 rgb(255, 0, 204),
+      3px -3px 0 black;
   }
-
-  .press-start-btn {
-    height: 10%;
-    transform: translate(33vw, 65.3vh);
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .section-triangle {
-    width: 50%;
-    height: 90%;
-    transform: translate(0px, 3.5%);
-  }
-
-  .press-start-btn {
-    height: 12%;
-    transform: translate(33vw, 69.5vh);
-  }
-}
+} */
