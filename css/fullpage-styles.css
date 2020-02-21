@@ -111,8 +111,6 @@
   text-align: center;
   text-transform: uppercase;
 
-  /* position: absolute; */
-
   padding-bottom: 1.3em;
   width: 35%;
   height: 1em;
@@ -148,7 +146,7 @@ div.press-start-link>a {
 }
 
 #fp-nav ul {
-  background: linear-gradient(180deg, rgb(167, 86, 164), rgb(66, 64, 219));
+  background: linear-gradient(180deg, rgb(167, 86, 164), rgb(0, 102, 204));
   border-radius: 5px;
   padding: 4px 0 4px 0;
   border: 3px;
@@ -216,10 +214,20 @@ p {
   font-family: arial, helvetica;
   font-weight: 550;
   letter-spacing: 2px;
+  font-size: 5vh;
+
+  position: absolute;
+  margin: auto 3vw;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: -1;
 }
 
 .FAQ {
-  position: absolute;
+  padding-top: 5vh;
 }
 
 .FAQ-card-deck {
@@ -238,7 +246,8 @@ p {
 }
 
 .FAQ-card {
-  background: linear-gradient(50deg, rgba(199, 100, 206, 1) 35%, 60%, rgb(125, 141, 216, 1) 80%);
+  background: linear-gradient(45deg, rgba(175, 0, 198, 0.75) 20%, 55%, rgba(255, 219, 0, 0.6) 95%),
+    url("../images/noise.svg");
   border-style: none;
   border-radius: 5px !important;
 
@@ -386,38 +395,3 @@ p {
     padding-bottom: 1.5em;
   }
 }
-
-/* @media only screen and (max-width: 450px) {
-  .timer {
-    transform: translateY(-1.5vh);
-  }
-
-  .location-text {
-    margin-top: 4%;
-  }
-
-  .section-triangle {
-    width: 50vw;
-    height: 25vh;
-    transform: translate(0%, 30vh);
-  }
-
-  .press-start-btn {
-    margin-top: 10px;
-    padding-top: 1px;
-    font-size: 0.8rem;
-    height: 3vh;
-    transform: translate(33vw, 47.5vh);
-  }
-
-  .progress {
-    height: 0.5rem;
-  }
-
-
-  .location-text {
-    text-shadow: 1px -1px 0 rgb(102, 255, 255),
-      2px -2px 0 rgb(255, 0, 204),
-      3px -3px 0 black;
-  }
-} */
