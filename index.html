@@ -18,13 +18,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css"
     integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/fullpage-styles.css">
+  <link rel="stylesheet" href="css/typewriter.css">
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/scrolloverflow.min.js"
     integrity="sha256-bmjt2PwiRoDWtD/Zbj9lJdkCvFIzYY7W/6q3ZcVjlu8=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"
-    integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.extensions.min.js"
+    integrity="sha256-pwVO9xs/zTEUDEzK1G4AbAAZbAzmU30SniNu2b9O0UY=" crossorigin="anonymous"></script>
   <script src="js/timer.js"></script>
 </head>
 
@@ -32,148 +33,29 @@
   <h1 style="visibility: hidden; margin: 0px; font-size: 0px;"> StudentHackVII </h1>
   <div class="nav-bar"></div>
   <div id="fullpage">
-    <div class="section" id="section0">
-      <div class="triangle-container">
-        <img src="images/triangle.svg" class="section-triangle"></img>
+    <div class="section section-hero" id="section0">
+      <div class="apply-btn">
+        <a id="apply-btn" href="https://apply.studenthack2020.com">
+          <p class="hero-text apply-text anim-typewriter">Apply</p>
+        </a>
       </div>
-      <div class="intro">
-        <div class="card header-card w-60 mx-auto">
-          <div class="card-title">
-            <div class="studenthack-title">
-              StudentHack 2020
-            </div>
-          </div>
-          <div class="card-body studenthack-title-body">
-            <div class="card-text">
-              <div class="date-text">
-                <span> 25<sup>th</sup> - 26<sup>th</sup> April </span>
-              </div>
-              <!-- <div id="timer" class="timer">
-                <span id="timer-days" class="timer-element">99</span>:<span id="timer-hours"
-                  class="timer-element">20</span>:<span id="timer-minutes" class="timer-element">14</span>:<span
-                  id="timer-seconds" class="timer-element">30</span>
-              </div> -->
-            </div>
-            <div class="card-text location-text">
-              Manchester
-            </div>
-          </div>
-          <div id="timer-progressbar" class="progress">
-            <div class="progress-bar"></div>
-          </div>
+
+      <div class="hero-text hero-info">
+        <div class="date-text">
+          <span>25-26 April</span>
+        </div>
+        <div class="location-text">
+          <span>Manchester</span>
+        </div>
+        <div id="timer" class="timer">
+          <span id="timer-days" class="timer-element">99</span>:<span id="timer-hours"
+            class="timer-element">20</span>:<span id="timer-minutes" class="timer-element">14</span>:<span
+            id="timer-seconds" class="timer-element">30</span> Left
         </div>
       </div>
-      <div class="press-start-btn press-start-link">
-        <a id="apply-btn" href="https://apply.studenthack2020.com"></a>
-        Press Start
-      </div>
     </div>
-    <!-- <div class="section" id="section1">
-      <div class="section-triangle"></div>
-      <div class="intro">
-        <h2>test0</h2>
-        <p>
-          test1
-        </p>
-      </div>
-    </div> -->
+
     <!-- FAQ -->
-    <div class="section" id="section2">
-      <!-- <div class="intro"> -->
-      <div class="FAQ">
-        <div class="card-deck FAQ-card-deck">
-          <!-- Question 1 -->
-          <div class="card rounded-0 FAQ-card">
-            <div class="card-body">
-              <h6 class="card-title FAQ-card-title">WHAT IS A HACKATHON?</h6>
-              <p class="card-text FAQ-text">Hackathons are awesome events full of creativity, technology and
-                passionate tech-related students
-                collaborating and creating. Attendees work in teams to create apps, games, robots… literally anything
-                you
-                want to build & learn about!</p>
-            </div>
-          </div>
-          <!-- Question 2 -->
-          <div class="card rounded-0 FAQ-card">
-            <div class="card-body">
-              <h6 class="card-title FAQ-card-title">HOW MUCH DOES IT COST?</h6>
-              <p class="card-text FAQ-text">StudentHack is free for all accepted hackers. We will provide you WiFi,
-                meals, drinks, sleeping rooms,
-                swag,workshops, great atmosphere and… FUN!</p>
-            </div>
-          </div>
-          <!-- Question 3 -->
-          <div class="card rounded-0 FAQ-card">
-            <div class="card-body">
-              <h6 class="card-title FAQ-card-title">I DON'T KNOW HOW TO CODE. CAN I STILL COME?</h6>
-              <p class="card-text FAQ-text">Hackathons are for beginners. Networking with and seeing awesome
-                hackers in action will expose you to a
-                tremendous amount of knowledge. There is an amazing suit of industry experts and mentors that are happy
-                to
-                assist you!</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="card-deck FAQ-card-deck">
-          <!-- Question 4 -->
-          <div class="card rounded-0 FAQ-card">
-            <div class="card-body">
-              <h6 class="card-title FAQ-card-title">WHAT IF I DON'T HAVE A TEAM?</h6>
-              <p class="card-text FAQ-text"> No need to worry! Part of the fun at the hackathon is meeting new
-                people. We will organise a team-building session, where you will meet other participants just like you.
-                We ask for the teams to be of 4 people</p>
-            </div>
-          </div>
-          <!-- Question 5 -->
-          <div class="card rounded-0 FAQ-card">
-            <div class="card-body">
-              <h6 class="card-title FAQ-card-title">WHAT SHOULD I BRING?</h6>
-              <p class="card-text FAQ-text">All attendees must bring a valid ID for admission. Other common
-                checklist items include laptops, chargers, sleeping bags and toiletries, spare clothes, adapters, and
-                sleeping bags.</p>
-            </div>
-          </div>
-          <!-- Question 6 -->
-          <div class="card rounded-0 FAQ-card">
-            <div class="card-body">
-              <h6 class="card-title FAQ-card-title">WHO CAN APPLY?</h6>
-              <p class="card-text FAQ-text">We accept students who are over 18 and are currently studying or have
-                graduated less than 1 year ago. You can also join us as a mentor or volunteer! Contact us for more info.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="card-deck FAQ-card-deck">
-          <!-- Question 7 -->
-          <div class="card rounded-0 FAQ-card">
-            <div class="card-body">
-              <h6 class="card-title FAQ-card-title">DO YOU OFFER TRAVEL REIMBURSEMENTS?</h6>
-              <p class="card-text FAQ-text">Unfortunately, we cannot reimburse you for your travel expenses.</p>
-            </div>
-          </div>
-          <!-- Question 8 -->
-          <div class="card rounded-0 FAQ-card">
-            <div class="card-body">
-              <h6 class="card-title FAQ-card-title">WHO OWNS MY IP RIGHTS, CODE AND IDEA?</h6>
-              <p class="card-text FAQ-text">You own all the rights to your intellectual property. We won’t claim
-                any right over anything made during this event.</p>
-            </div>
-          </div>
-          <!-- Question 9 -->
-          <div class="card rounded-0 FAQ-card">
-            <div class="card-body">
-              <h class="card-title FAQ-card-title">WHAT CAN I EXPECT FROM STUDENTHACK?</h6>
-                <p class="card-text FAQ-text">An entire weekend of great company, good food and plenty of swag!
-                  We’ll also have hardware and tons of mentors.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Title for FAQ -->
-      <h2 class="verticalText">FREQUENTLY ASKED QUESTIONS</h2>
-    </div>
   </div>
 
 
@@ -377,10 +259,9 @@
     var myFullpage = new fullpage('#fullpage', {
       licenseKey: 'wG3vvDAL-giM3okkt-uEQFHy3r-aIwc3Aqz',
       anchors: ['title', 'faq'],
-      navigation: true,
-      navigationPosition: 'right',
-      recordHistory: false,
-      scrollOverflow: true
+      scrollOverflow: true,
+      dragAndMove: 'horizontal',
+      loopHorizontal: false
     });
   </script>
 </body>
