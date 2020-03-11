@@ -1,5 +1,5 @@
 .var-highlight {
-  color: #C0AD60;
+  color: #c0ad60;
 }
 
 .string-highlight {
@@ -14,36 +14,18 @@
 
 .apply-text:after {
   color: white;
-  content: "|";
-  animation: blink 500ms steps(1) infinite alternate;
-}
-
-@-webkit-keyframes blink {
-  0% {
-    -webkit-opacity: 0;
-  }
-
-  50% {
-    -webkit-opacity: 0;
-  }
-}
-
-@-moz-keyframes blink {
-  0% {
-    opacity: 0;
-  }
-
-  50% {
-    opacity: 1;
-  }
+  content: '|';
+  animation: blink 1s step-start 0s infinite;
+  -webkit-animation: blink 1s step-start 0s infinite;
 }
 
 @keyframes blink {
-  0% {
+  50% {
     opacity: 0;
   }
-
+}
+@-webkit-keyframes blink {
   50% {
-    opacity: 1;
+    opacity: 0;
   }
 }
