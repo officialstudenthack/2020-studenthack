@@ -60,6 +60,24 @@
   text-align: left;
 }
 
+.hero-right {
+  position: absolute;
+  font-size: 2em;
+  bottom: 0;
+  right: 0;
+
+  text-transform: uppercase;
+  padding-bottom: 2px !important;
+}
+.hero-links > small {
+  color: #3295ff !important;
+  padding-right: 1.5vw;
+}
+
+.hero-links {
+  font-size: 1rem;
+}
+
 .apply-btn {
   position: absolute;
   font-family: 'PT Sans', sans-serif;
